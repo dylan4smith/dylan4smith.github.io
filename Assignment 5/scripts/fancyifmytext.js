@@ -3,6 +3,7 @@ alert("Hello, world!");
 
 // Function to make text bigger
 function makeTextBigger() {
+    console.log("Bigger button clicked");
     document.getElementById("userText").style.fontSize = "24pt";
 }
 
@@ -13,10 +14,12 @@ function applyStyle() {
         textArea.style.fontWeight = "bold";
         textArea.style.color = "blue";
         textArea.style.textDecoration = "underline";
+        alert("Woohoo! Exciting!");
     } else if (document.getElementById("boringBetty").checked) {
         textArea.style.fontWeight = "normal";
         textArea.style.color = "black";
         textArea.style.textDecoration = "none";
+        alert("Booo. You are boring.");
     }
 }
 
